@@ -70,8 +70,8 @@ const socialLinks = [
 
 const SocailMedia = () => {
   return (
-    <div className="flex min-h-20 w-full items-center justify-end bg-black py-3">
-      <div className="flex items-center gap-6">
+    <div className="flex min-h-20 w-full items-center justify-end bg-black py-3 max-lg:min-h-0 max-lg:justify-center max-lg:px-1 max-lg:pt-6">
+      <div className="flex items-center gap-6 max-lg:w-full max-lg:flex-wrap max-lg:justify-center max-lg:gap-x-4 max-lg:gap-y-3">
         {socialLinks.map((link) => {
           const content = (
             <>

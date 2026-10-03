@@ -112,17 +112,17 @@ const page = () => {
 
   return (
     <div className="min-h-screen w-full bg-black text-white">
-      <div className="flex h-40 items-center px-30">
-        <h1 className="font-oswald text-[50px] font-bold">GET IN TOUCH</h1>
+      <div className="flex h-40 items-center px-30 max-lg:h-auto max-lg:px-4 max-lg:pt-8 max-lg:pb-4">
+        <h1 className="font-oswald text-[50px] font-bold max-lg:text-4xl">GET IN TOUCH</h1>
       </div>
 
-      <p className="max-w-3xl px-30 text-sm font-medium leading-relaxed text-gray-300">
+      <p className="max-w-3xl px-30 text-sm font-medium leading-relaxed text-gray-300 max-lg:px-4">
         Have a website idea, a product to build, or a question about my work?
         Send a message and I will reply. You can also reach me directly on
         Facebook, Instagram, GitHub, or email.
       </p>
 
-      <div className="grid grid-cols-2 items-start gap-10 px-30 py-12">
+      <div className="grid grid-cols-2 items-start gap-10 px-30 py-12 max-lg:grid-cols-1 max-lg:gap-8 max-lg:px-4 max-lg:py-8">
         <div className="flex flex-col gap-4">
           {contacts.map((contact) => (
             <a
@@ -154,7 +154,7 @@ const page = () => {
 
         <form
           onSubmit={sendEmail}
-          className="flex flex-col gap-4 rounded-2xl bg-white p-8 text-black"
+          className="flex flex-col gap-4 rounded-2xl bg-white p-8 text-black max-lg:p-5"
         >
           <label className="flex flex-col gap-2 text-sm font-bold">
             Name

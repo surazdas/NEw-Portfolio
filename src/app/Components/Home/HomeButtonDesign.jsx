@@ -6,8 +6,8 @@ const verticalLineCount = 20;
 
 const HomeButtonDesign = () => {
   return (
-    <div className="flex h-120 w-full overflow-hidden bg-black">
-      <div className="relative flex h-full min-w-0 flex-1 overflow-hidden rounded-r-full bg-orange-50">
+    <div className="flex h-120 w-full overflow-hidden bg-black max-lg:h-auto max-lg:flex-col">
+      <div className="relative flex h-full min-w-0 flex-1 overflow-hidden rounded-r-full bg-orange-50 max-lg:h-auto max-lg:flex-col max-lg:rounded-none">
         <div className="absolute inset-0 flex flex-col justify-between py-12">
           {Array.from({ length: horizontalLineCount }).map((_, index) => (
             <div key={`h-${index}`} className="h-0.5 w-full bg-gray-300"></div>
@@ -19,13 +19,13 @@ const HomeButtonDesign = () => {
           ))}
         </div>
 
-        <div className="absolute w-100 h-50 flex items-start justify-end">
+        <div className="absolute flex h-50 w-100 items-start justify-end max-lg:static max-lg:h-auto max-lg:w-full max-lg:items-center max-lg:justify-center max-lg:px-4 max-lg:pt-8">
           {/* <img
             src="Pic/images.jpeg"
             alt=""
             className="w-50 h-full rounded-full"
           /> */}
-          <div className="w-45 h-45 rounded-full bg-[#70CDC6] flex flex-col items-center pt-5 rotate-6">
+          <div className="flex h-45 w-45 rotate-6 flex-col items-center rounded-full bg-[#70CDC6] pt-5 max-lg:rotate-0">
             <div className="w-12 h-10 flex -space-x-2">
               <div className="w-7 h-7 rounded-full bg-black "></div>
               <div className="w-7 h-7 rounded-full bg-black "></div>
@@ -39,7 +39,7 @@ const HomeButtonDesign = () => {
             </p>
           </div>
         </div>
-        <div className=" w-100 h-full flex flex-col justify-center items-center pt-30 rotate-12">
+        <div className="flex h-full w-100 rotate-12 flex-col items-center justify-center pt-30 max-lg:h-auto max-lg:w-full max-lg:rotate-0 max-lg:px-4 max-lg:pt-6">
           <div className="relative w-60 h-10 bg-yellow-300 flex items-center justify-around rounded-r-sm rounded-t-sm">
             <span className="font-bold text-[30px] font-oswald text-black flex items-center justify-center">
               E<div className="w-5 h-1.5 bg-black mx-1"></div>
@@ -51,17 +51,17 @@ const HomeButtonDesign = () => {
               </span>
             </div>
           </div>
-          <div className="relative w-45 h-8 bg-yellow-300 rounded-b-sm mr-15 flex items-center justify-center">
+          <div className="relative mr-15 flex h-8 w-45 items-center justify-center rounded-b-sm bg-yellow-300 max-lg:mr-0">
             <span className="font-oswald text-[26px] font-bold text-black">
               EXPERIENCES
             </span>
           </div>
         </div>
 
-        <div className="group relative z-10 ml-auto flex h-full items-center pr-24">
-          <div className="relative h-80 w-96">
-            <div className="absolute inset-0 rotate-12 rounded-2xl bg-amber-200 transition-transform duration-300 group-hover:rotate-6"></div>
-            <div className="relative flex h-full w-full flex-col justify-between rounded-2xl bg-black p-7 text-white">
+        <div className="group relative z-10 ml-auto flex h-full items-center pr-24 max-lg:ml-0 max-lg:h-auto max-lg:w-full max-lg:px-4 max-lg:pt-6 max-lg:pr-4 max-lg:pb-8">
+          <div className="relative h-80 w-96 max-lg:h-auto max-lg:w-full">
+            <div className="absolute inset-0 rotate-12 rounded-2xl bg-amber-200 transition-transform duration-300 group-hover:rotate-6 max-lg:rotate-3 max-lg:group-hover:rotate-2"></div>
+            <div className="relative flex h-full w-full flex-col justify-between rounded-2xl bg-black p-7 text-white max-lg:h-auto max-lg:gap-6 max-lg:p-5">
               <div className="flex items-center justify-between">
                 <span className="font-oswald text-sm font-bold tracking-[0.28em] text-[#70CDC6]">
                   AVAILABLE
@@ -70,7 +70,7 @@ const HomeButtonDesign = () => {
                   01
                 </span>
               </div>
-              <h2 className="font-oswald text-5xl font-bold leading-[0.9]">
+              <h2 className="font-oswald text-5xl font-bold leading-[0.9] max-lg:text-4xl">
                 I SHAPE
                 <br />
                 INTERFACES
@@ -94,15 +94,15 @@ const HomeButtonDesign = () => {
         </div>
       </div>
 
-      <aside className="relative flex w-64 shrink-0 flex-col justify-between overflow-hidden bg-black px-8 py-10 text-white">
-        <p className="pointer-events-none absolute -left-2 top-6 font-oswald text-[120px] font-bold leading-none text-white/10">
+      <aside className="relative flex w-64 shrink-0 flex-col justify-between overflow-hidden bg-black px-8 py-10 text-white max-lg:w-full max-lg:flex-row max-lg:items-center max-lg:gap-4 max-lg:px-5 max-lg:py-6">
+        <p className="pointer-events-none absolute -left-2 top-6 font-oswald text-[120px] font-bold leading-none text-white/10 max-lg:hidden">
           SD
         </p>
         <p className="relative font-oswald text-xs font-bold tracking-[0.35em] text-[#70CDC6]">
           PORTFOLIO
         </p>
         <div className="relative">
-          <p className="font-oswald text-6xl font-bold leading-none">26</p>
+          <p className="font-oswald text-6xl font-bold leading-none max-lg:text-4xl">26</p>
           <div className="mt-3 h-0.5 w-10 bg-amber-200"></div>
           <p className="mt-3 font-oswald text-sm font-bold tracking-[0.2em] text-amber-200">
             NEPAL

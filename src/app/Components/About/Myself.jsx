@@ -4,24 +4,24 @@ import SocailMedia from "../SocailMedia";
 const Myself = () => {
   return (
     <div className="">
-      <div className="h-screen w-full bg-black flex justify-center">
-        <div className="relative h-200 w-200 bg-black flex justify-center items-center">
-          <div className=" w-100 h-150 bg-white rotate-12 scale-120"></div>
-          <div className="absolute w-100 h-150 bg-black ">
+      <div className="flex h-screen w-full justify-center bg-black max-lg:h-auto max-lg:flex-col max-lg:items-center">
+        <div className="relative flex h-200 w-200 items-center justify-center bg-black max-lg:h-[420px] max-lg:w-full">
+          <div className="h-150 w-100 rotate-12 scale-120 bg-white max-lg:h-72 max-lg:w-52 max-lg:rotate-6 max-lg:scale-100"></div>
+          <div className="absolute h-150 w-100 bg-black max-lg:h-72 max-lg:w-52">
             <img
               src="Pic/Main.jpeg"
               alt=""
-              className="w-full h-full flex items-center object-center scale-120"
+              className="flex h-full w-full scale-120 items-center object-center max-lg:scale-100 max-lg:object-cover"
             />
           </div>
         </div>
-        <div className="h-200 w-200 bg-black flex items-center justify-center">
-          <div className="w-full h-100 bg-black-50 flex flex-col items-center">
-            <h1 className="text-[100px] text-white font-oswald font-bold ">
+        <div className="flex h-200 w-200 items-center justify-center bg-black max-lg:h-auto max-lg:w-full max-lg:px-4 max-lg:pb-10">
+          <div className="flex h-100 w-full flex-col items-center bg-black-50 max-lg:h-auto">
+            <h1 className="font-oswald text-[100px] font-bold text-white max-lg:text-center max-lg:text-[clamp(2.25rem,10vw,3.5rem)] max-lg:leading-[0.9]">
               I`M SURAJ DAS
             </h1>
-            <div className="w-full flex items-center justify-center px-5">
-              <span className="font-bold text-sm ">
+            <div className="flex w-full items-center justify-center px-5 max-lg:px-0 max-lg:pt-4">
+              <span className="text-sm font-bold">
                 A passionate Front-End Developer from Nepal with around 1 year
                 of hands-on experience in building modern, responsive, and
                 user-friendly web applications. I completed my +2 in Management

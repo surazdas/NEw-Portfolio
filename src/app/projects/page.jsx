@@ -130,21 +130,21 @@ const projects = [
 const page = () => {
   return (
     <div>
-      <div className="w-full min-h-200 bg-amber-50">
-        <div className="w-full h-40 bg-black flex items-center px-30">
-          <span className="text-[50px] font-oswald font-bold">PROJECTS</span>
+      <div className="min-h-200 w-full bg-amber-50">
+        <div className="flex h-40 w-full items-center bg-black px-30 max-lg:h-auto max-lg:px-4 max-lg:py-8">
+          <span className="font-oswald text-[50px] font-bold max-lg:text-4xl">PROJECTS</span>
         </div>
-        <div className="grid w-full grid-cols-2 justify-items-center gap-6 bg-black px-30 py-10">
+        <div className="grid w-full grid-cols-2 justify-items-center gap-6 bg-black px-30 py-10 max-lg:grid-cols-1 max-lg:gap-8 max-lg:overflow-x-hidden max-lg:px-4 max-lg:py-6">
           {projects.map((project) => {
             const className =
-              "relative z-10 flex h-80 w-120 flex-col justify-between rounded-2xl bg-black p-6 text-white";
+              "relative z-10 flex h-80 w-120 flex-col justify-between rounded-2xl bg-black p-6 text-white max-lg:h-auto max-lg:min-h-64 max-lg:w-full";
             const content = (
               <>
                 <div className="flex items-center gap-4">
                   <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-white text-black">
                     {logos[project.title]}
                   </div>
-                  <h2 className="font-oswald text-3xl font-bold leading-none">
+                  <h2 className="font-oswald text-3xl font-bold leading-none max-lg:text-2xl">
                     {project.title}
                   </h2>
                 </div>
@@ -173,10 +173,10 @@ const page = () => {
             );
 
             return (
-              <div key={project.title} className="relative w-120">
+              <div key={project.title} className="relative w-120 max-lg:w-full">
                 <div
                   aria-hidden="true"
-                  className="absolute inset-0 w-120 rotate-12 rounded-2xl bg-white"
+                  className="absolute inset-0 w-120 rotate-12 rounded-2xl bg-white max-lg:w-full max-lg:rotate-3"
                 />
                 {card}
               </div>
